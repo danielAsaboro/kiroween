@@ -1,0 +1,4 @@
+{
+  "files": [],
+  "references": [{ "path": "skeleton" }, { "path": "apps/app-one" }, { "path": "apps/app-two" }]
+}
