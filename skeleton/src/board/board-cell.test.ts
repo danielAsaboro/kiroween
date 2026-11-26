@@ -86,7 +86,7 @@ describe('tierOf — example tests', () => {
 // ---------------------------------------------------------------------------
 
 describe('tierOf — property: monotonic in width', () => {
-  it('increasing width never produces a richer tier', () => {
+  it('increasing width never produces a poorer tier', () => {
     fc.assert(
       fc.property(
         fc.integer({ min: 0, max: 600 }),
@@ -122,7 +122,7 @@ describe('tierOf — property: monotonic in width', () => {
 });
 
 describe('tierOf — property: monotonic in height', () => {
-  it('increasing height never produces a richer tier', () => {
+  it('increasing height never produces a poorer tier', () => {
     fc.assert(
       fc.property(
         fc.integer({ min: 0, max: 600 }),
