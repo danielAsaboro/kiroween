@@ -1,0 +1,16 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "grader-tests-on-save",
+      "description": "Run pnpm test when grader source or tell specs change",
+      "trigger": "PostFileSave",
+      "matcher": "^(skeleton/src/grader/|\\.kiro/specs/tell-)",
+      "action": {
+        "type": "command",
+        "command": "pnpm test"
+      },
+      "timeout": 120
+    }
+  ]
+}
