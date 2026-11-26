@@ -1,16 +1,15 @@
-# kiroween
+# Omens
 
-Puts modern design and job files onto machines that only read floppies and old formats, in the browser.
+An open tells board. Nodes post one odd public signal each — fresh-wallet money on Polymarket, tanker counts, pizza busyness, WARN filings — as signed Nostr readings. Every signal earns its weight only from markets that later settled. The board shows the fused reading next to the market price and the gap between them. It never gives trading advice.
 
 ## Layout
 
 ```
-skeleton/        format codecs generated from specs, round-trip property tests, FAT12 disk-image writer
-apps/app-one/    embroidery: open a design, preview stitches, check machine limits, write the old format and a disk
-apps/app-two/    versioned job library that writes floppy images for old machine controllers
+skeleton/        tell contract, grader, fusion engine, board UI kit
+apps/app-one/    Geopolitics: US strikes Iran
+apps/app-two/    Layoffs: Microsoft, Meta
 .kiro/           Kiro specs, steering and hooks
-tools/oracles/   dev-only checkers (pyembroidery dump, floppy image check)
-fixtures/        sample files for the oracles
+fixtures/omens/  static board data (grader output — read-only)
 ```
 
 ## Run
@@ -25,8 +24,6 @@ pnpm lint
 pnpm typecheck
 pnpm build
 ```
-
-Oracles: see `tools/oracles/README.md`.
 
 ## Hard requirements
 
